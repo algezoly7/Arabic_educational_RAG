@@ -1,0 +1,16 @@
+{   "query_type":"text",
+    "business_id": "teaching_platform_123",
+    "business_remaining_number_of_tokens": 100,
+    "end_user_id": "student_456",
+    "end_user_remaining_tokens": 100,
+    "query": "ما هي الفأرة (mouse)؟",
+    "file_name":"saudi_ethics_code",
+    "context": {
+        "education_level": {
+        "grade": "الثاني عشر التكنولوجي",
+        "semester": "الفصل الأول"
+        },
+        "subject": "اللغة الانجليزية"
+    },
+    "correction_dataset": "/content/downloads/الثاني عشر التكنولوجي/الفصل الأول/اللغة الانجليزية/questions.csv"
+}

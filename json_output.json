@@ -1,0 +1,8 @@
+{
+  "reject": 403,
+  "type": "Text",
+  "response": {
+    "rag_response": "لم يتم تقديم تعريف للفأرة (mouse) في النص.",
+    "tokens_consumed": 14
+  }
+}
