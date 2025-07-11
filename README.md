@@ -30,3 +30,53 @@ AI anser: يتحدث الكتاب بشكل عام عن مفاهيم الكمبي
 User query: ما هي الفأرة (mouse)?
 AI anser: الفأرة هي جهاز تأشير هام يتحكم بموقع الإشارة (السهم) على جهاز الإخراج (الشاشة). وتتم عملية إدخال الأوامر عن طريق النقر أو السحب. واهم وظائف الفأرة هي (التحريك، التأشير، السحب، النقر بالزر الايسر، النقر بالزر الايمن).
 ```
+
+<h1>Running the system</h1>
+<p> This system accepts PDF documents. To run this system, you need to first study the JSON input and JSON output files. </p>
+
+<h4>JSON input file:</h4>
+
+```
+{   "query_type":"text",
+    "business_id": "teaching_platform_123",
+    "business_remaining_number_of_tokens": 100,
+    "end_user_id": "student_456",
+    "end_user_remaining_tokens": 100,
+    "query": "ما هي الفأرة (mouse)",
+    "file_name":"computer_definations",
+    "context": {
+        "education_level": {
+        "grade": "الثاني عشر التكنولوجي",
+        "semester": "الفصل الأول"
+        },
+        "subject": "اللغة الانجليزية"
+    },
+    "correction_dataset": "/content/downloads/الثاني عشر التكنولوجي/الفصل الأول/اللغة الانجليزية/questions.csv"
+}
+```
+
+<p>Note, you need to paste the name of your PDF file in the file name in JSON input (excluding .pdf)</p>
+<h4>JSON output file</h4>
+
+```
+{
+  "reject": 403,
+  "type": "Text",
+  "response": {
+    "rag_response": "الفأرة (Mouse) هي جهاز تأشير هام يتحكم بموقع الإشارة (السهم) على جهاز الإخراج (الشاشة). وتتم عملية إدخال الأوامر عن طريق النقر أو السحب. واهم وظائف الفأرة هي (التحريك، التأشير، السحب، النقر بالزر الايسر، النقر بالزر الايمن).",
+    "tokens_consumed": 12
+  }
+}
+```
+
+<p>After that run:</p>
+
+```
+pip install requirements.txt
+```
+
+<p>Then run:</p>
+
+```
+python rag.py
+```
