@@ -20,3 +20,7 @@
   In the implementation, I use FAISS (Facebook AI Similarity Search) vector store imported from langchain. <b>The script automatically detects whether a document has already been transformed into a vector store and takes the appropriate action accordingly.</b></p>
 <p>As the brain of the system, I used <b>gemma 3n 4b</b> mode, which is a lightweight and cheap LLM suitable for our application. I also incorporated a token calculation system, as this platform is intended to serve schools and businesses. Each school and student will be assigned a quota or usage limit.</p>
 <p>Additionally, to ensure easy integration with any project, the system uses clear JSON input and output formats, as demonstrated in the attached.</p>
+<h2>Examples from the system</h2>
+<p align="center">
+  <img width="632" height="44" alt="image" src="https://github.com/user-attachments/assets/52e84b45-375f-458f-97fb-980fed31be9e" />
+</p>
